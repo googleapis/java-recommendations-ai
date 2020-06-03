@@ -17,6 +17,7 @@
 import synthtool as s
 import synthtool.gcp as gcp
 import synthtool.languages.java as java
+import shutil
 
 AUTOSYNTH_MULTIPLE_COMMITS = True
 
@@ -32,5 +33,6 @@ for version in versions:
       bazel_target=f'//google/cloud/{service}/{version}:google-cloud-{service}-{version}-java',
       destination_name='recommendations-ai',
   )
+  shutil.rmtree(f'proto-google-cloud-recommendations-ai-{version}/src/main/java/com/google/api', ignore_errors=True)
 
 java.common_templates()
