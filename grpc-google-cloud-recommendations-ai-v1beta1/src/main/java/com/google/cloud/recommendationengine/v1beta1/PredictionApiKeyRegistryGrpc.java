@@ -22,17 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Service for registering API keys for use with the `predict` method. If you
- * use an API key to request predictions, you must first register the API key.
- * Otherwise, your prediction request is rejected. If you use OAuth to
- * authenticate your `predict` method call, you do not need to register an API
- * key. You can register up to 20 API keys per project.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments =
@@ -260,26 +250,10 @@ public final class PredictionApiKeyRegistryGrpc {
     return PredictionApiKeyRegistryFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for registering API keys for use with the `predict` method. If you
-   * use an API key to request predictions, you must first register the API key.
-   * Otherwise, your prediction request is rejected. If you use OAuth to
-   * authenticate your `predict` method call, you do not need to register an API
-   * key. You can register up to 20 API keys per project.
-   * </pre>
-   */
+  /** */
   public abstract static class PredictionApiKeyRegistryImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Register an API key for use with predict method.
-     * </pre>
-     */
+    /** */
     public void createPredictionApiKeyRegistration(
         com.google.cloud.recommendationengine.v1beta1.CreatePredictionApiKeyRegistrationRequest
             request,
@@ -289,13 +263,7 @@ public final class PredictionApiKeyRegistryGrpc {
       asyncUnimplementedUnaryCall(getCreatePredictionApiKeyRegistrationMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * List the registered apiKeys for use with predict method.
-     * </pre>
-     */
+    /** */
     public void listPredictionApiKeyRegistrations(
         com.google.cloud.recommendationengine.v1beta1.ListPredictionApiKeyRegistrationsRequest
             request,
@@ -306,13 +274,7 @@ public final class PredictionApiKeyRegistryGrpc {
       asyncUnimplementedUnaryCall(getListPredictionApiKeyRegistrationsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Unregister an apiKey from using for predict method.
-     * </pre>
-     */
+    /** */
     public void deletePredictionApiKeyRegistration(
         com.google.cloud.recommendationengine.v1beta1.DeletePredictionApiKeyRegistrationRequest
             request,
@@ -352,17 +314,7 @@ public final class PredictionApiKeyRegistryGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for registering API keys for use with the `predict` method. If you
-   * use an API key to request predictions, you must first register the API key.
-   * Otherwise, your prediction request is rejected. If you use OAuth to
-   * authenticate your `predict` method call, you do not need to register an API
-   * key. You can register up to 20 API keys per project.
-   * </pre>
-   */
+  /** */
   public static final class PredictionApiKeyRegistryStub
       extends io.grpc.stub.AbstractAsyncStub<PredictionApiKeyRegistryStub> {
     private PredictionApiKeyRegistryStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -375,13 +327,7 @@ public final class PredictionApiKeyRegistryGrpc {
       return new PredictionApiKeyRegistryStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Register an API key for use with predict method.
-     * </pre>
-     */
+    /** */
     public void createPredictionApiKeyRegistration(
         com.google.cloud.recommendationengine.v1beta1.CreatePredictionApiKeyRegistrationRequest
             request,
@@ -394,13 +340,7 @@ public final class PredictionApiKeyRegistryGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * List the registered apiKeys for use with predict method.
-     * </pre>
-     */
+    /** */
     public void listPredictionApiKeyRegistrations(
         com.google.cloud.recommendationengine.v1beta1.ListPredictionApiKeyRegistrationsRequest
             request,
@@ -414,13 +354,7 @@ public final class PredictionApiKeyRegistryGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Unregister an apiKey from using for predict method.
-     * </pre>
-     */
+    /** */
     public void deletePredictionApiKeyRegistration(
         com.google.cloud.recommendationengine.v1beta1.DeletePredictionApiKeyRegistrationRequest
             request,
@@ -432,17 +366,7 @@ public final class PredictionApiKeyRegistryGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for registering API keys for use with the `predict` method. If you
-   * use an API key to request predictions, you must first register the API key.
-   * Otherwise, your prediction request is rejected. If you use OAuth to
-   * authenticate your `predict` method call, you do not need to register an API
-   * key. You can register up to 20 API keys per project.
-   * </pre>
-   */
+  /** */
   public static final class PredictionApiKeyRegistryBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<PredictionApiKeyRegistryBlockingStub> {
     private PredictionApiKeyRegistryBlockingStub(
@@ -456,13 +380,7 @@ public final class PredictionApiKeyRegistryGrpc {
       return new PredictionApiKeyRegistryBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Register an API key for use with predict method.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistration
         createPredictionApiKeyRegistration(
             com.google.cloud.recommendationengine.v1beta1.CreatePredictionApiKeyRegistrationRequest
@@ -471,13 +389,7 @@ public final class PredictionApiKeyRegistryGrpc {
           getChannel(), getCreatePredictionApiKeyRegistrationMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * List the registered apiKeys for use with predict method.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.ListPredictionApiKeyRegistrationsResponse
         listPredictionApiKeyRegistrations(
             com.google.cloud.recommendationengine.v1beta1.ListPredictionApiKeyRegistrationsRequest
@@ -486,13 +398,7 @@ public final class PredictionApiKeyRegistryGrpc {
           getChannel(), getListPredictionApiKeyRegistrationsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Unregister an apiKey from using for predict method.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deletePredictionApiKeyRegistration(
         com.google.cloud.recommendationengine.v1beta1.DeletePredictionApiKeyRegistrationRequest
             request) {
@@ -501,17 +407,7 @@ public final class PredictionApiKeyRegistryGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for registering API keys for use with the `predict` method. If you
-   * use an API key to request predictions, you must first register the API key.
-   * Otherwise, your prediction request is rejected. If you use OAuth to
-   * authenticate your `predict` method call, you do not need to register an API
-   * key. You can register up to 20 API keys per project.
-   * </pre>
-   */
+  /** */
   public static final class PredictionApiKeyRegistryFutureStub
       extends io.grpc.stub.AbstractFutureStub<PredictionApiKeyRegistryFutureStub> {
     private PredictionApiKeyRegistryFutureStub(
@@ -525,13 +421,7 @@ public final class PredictionApiKeyRegistryGrpc {
       return new PredictionApiKeyRegistryFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Register an API key for use with predict method.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistration>
         createPredictionApiKeyRegistration(
@@ -542,13 +432,7 @@ public final class PredictionApiKeyRegistryGrpc {
           request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * List the registered apiKeys for use with predict method.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.ListPredictionApiKeyRegistrationsResponse>
         listPredictionApiKeyRegistrations(
@@ -559,13 +443,7 @@ public final class PredictionApiKeyRegistryGrpc {
           request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Unregister an apiKey from using for predict method.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deletePredictionApiKeyRegistration(
             com.google.cloud.recommendationengine.v1beta1.DeletePredictionApiKeyRegistrationRequest

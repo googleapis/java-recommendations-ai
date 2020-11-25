@@ -22,13 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Service for ingesting end user actions on the customer website.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/recommendationengine/v1beta1/user_event_service.proto")
@@ -313,22 +307,10 @@ public final class UserEventServiceGrpc {
     return UserEventServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting end user actions on the customer website.
-   * </pre>
-   */
+  /** */
   public abstract static class UserEventServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event.
-     * </pre>
-     */
+    /** */
     public void writeUserEvent(
         com.google.cloud.recommendationengine.v1beta1.WriteUserEventRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.UserEvent>
@@ -336,29 +318,14 @@ public final class UserEventServiceGrpc {
       asyncUnimplementedUnaryCall(getWriteUserEventMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event from the browser. This uses a GET request to
-     * due to browser restriction of POST-ing to a 3rd party domain.
-     * This method is used only by the Recommendations AI JavaScript pixel.
-     * Users should not call this method directly.
-     * </pre>
-     */
+    /** */
     public void collectUserEvent(
         com.google.cloud.recommendationengine.v1beta1.CollectUserEventRequest request,
         io.grpc.stub.StreamObserver<com.google.api.HttpBody> responseObserver) {
       asyncUnimplementedUnaryCall(getCollectUserEventMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of user events within a time range, with potential filtering.
-     * </pre>
-     */
+    /** */
     public void listUserEvents(
         com.google.cloud.recommendationengine.v1beta1.ListUserEventsRequest request,
         io.grpc.stub.StreamObserver<
@@ -367,34 +334,14 @@ public final class UserEventServiceGrpc {
       asyncUnimplementedUnaryCall(getListUserEventsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes permanently all user events specified by the filter provided.
-     * Depending on the number of events specified by the filter, this operation
-     * could take hours or days to complete. To test a filter, use the list
-     * command first.
-     * </pre>
-     */
+    /** */
     public void purgeUserEvents(
         com.google.cloud.recommendationengine.v1beta1.PurgeUserEventsRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
       asyncUnimplementedUnaryCall(getPurgeUserEventsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of User events. Request processing might be
-     * synchronous. Events that already exist are skipped.
-     * Use this method for backfilling historical user events.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully inserted.
-     * Operation.metadata is of type ImportMetadata.
-     * </pre>
-     */
+    /** */
     public void importUserEvents(
         com.google.cloud.recommendationengine.v1beta1.ImportUserEventsRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -440,13 +387,7 @@ public final class UserEventServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting end user actions on the customer website.
-   * </pre>
-   */
+  /** */
   public static final class UserEventServiceStub
       extends io.grpc.stub.AbstractAsyncStub<UserEventServiceStub> {
     private UserEventServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -458,13 +399,7 @@ public final class UserEventServiceGrpc {
       return new UserEventServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event.
-     * </pre>
-     */
+    /** */
     public void writeUserEvent(
         com.google.cloud.recommendationengine.v1beta1.WriteUserEventRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.UserEvent>
@@ -475,16 +410,7 @@ public final class UserEventServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event from the browser. This uses a GET request to
-     * due to browser restriction of POST-ing to a 3rd party domain.
-     * This method is used only by the Recommendations AI JavaScript pixel.
-     * Users should not call this method directly.
-     * </pre>
-     */
+    /** */
     public void collectUserEvent(
         com.google.cloud.recommendationengine.v1beta1.CollectUserEventRequest request,
         io.grpc.stub.StreamObserver<com.google.api.HttpBody> responseObserver) {
@@ -494,13 +420,7 @@ public final class UserEventServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of user events within a time range, with potential filtering.
-     * </pre>
-     */
+    /** */
     public void listUserEvents(
         com.google.cloud.recommendationengine.v1beta1.ListUserEventsRequest request,
         io.grpc.stub.StreamObserver<
@@ -512,16 +432,7 @@ public final class UserEventServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes permanently all user events specified by the filter provided.
-     * Depending on the number of events specified by the filter, this operation
-     * could take hours or days to complete. To test a filter, use the list
-     * command first.
-     * </pre>
-     */
+    /** */
     public void purgeUserEvents(
         com.google.cloud.recommendationengine.v1beta1.PurgeUserEventsRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -531,18 +442,7 @@ public final class UserEventServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of User events. Request processing might be
-     * synchronous. Events that already exist are skipped.
-     * Use this method for backfilling historical user events.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully inserted.
-     * Operation.metadata is of type ImportMetadata.
-     * </pre>
-     */
+    /** */
     public void importUserEvents(
         com.google.cloud.recommendationengine.v1beta1.ImportUserEventsRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -553,13 +453,7 @@ public final class UserEventServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting end user actions on the customer website.
-   * </pre>
-   */
+  /** */
   public static final class UserEventServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<UserEventServiceBlockingStub> {
     private UserEventServiceBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -572,73 +466,32 @@ public final class UserEventServiceGrpc {
       return new UserEventServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.UserEvent writeUserEvent(
         com.google.cloud.recommendationengine.v1beta1.WriteUserEventRequest request) {
       return blockingUnaryCall(getChannel(), getWriteUserEventMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event from the browser. This uses a GET request to
-     * due to browser restriction of POST-ing to a 3rd party domain.
-     * This method is used only by the Recommendations AI JavaScript pixel.
-     * Users should not call this method directly.
-     * </pre>
-     */
+    /** */
     public com.google.api.HttpBody collectUserEvent(
         com.google.cloud.recommendationengine.v1beta1.CollectUserEventRequest request) {
       return blockingUnaryCall(
           getChannel(), getCollectUserEventMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of user events within a time range, with potential filtering.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.ListUserEventsResponse listUserEvents(
         com.google.cloud.recommendationengine.v1beta1.ListUserEventsRequest request) {
       return blockingUnaryCall(getChannel(), getListUserEventsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes permanently all user events specified by the filter provided.
-     * Depending on the number of events specified by the filter, this operation
-     * could take hours or days to complete. To test a filter, use the list
-     * command first.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation purgeUserEvents(
         com.google.cloud.recommendationengine.v1beta1.PurgeUserEventsRequest request) {
       return blockingUnaryCall(getChannel(), getPurgeUserEventsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of User events. Request processing might be
-     * synchronous. Events that already exist are skipped.
-     * Use this method for backfilling historical user events.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully inserted.
-     * Operation.metadata is of type ImportMetadata.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation importUserEvents(
         com.google.cloud.recommendationengine.v1beta1.ImportUserEventsRequest request) {
       return blockingUnaryCall(
@@ -646,13 +499,7 @@ public final class UserEventServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting end user actions on the customer website.
-   * </pre>
-   */
+  /** */
   public static final class UserEventServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<UserEventServiceFutureStub> {
     private UserEventServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -665,13 +512,7 @@ public final class UserEventServiceGrpc {
       return new UserEventServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.UserEvent>
         writeUserEvent(
@@ -680,16 +521,7 @@ public final class UserEventServiceGrpc {
           getChannel().newCall(getWriteUserEventMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Writes a single user event from the browser. This uses a GET request to
-     * due to browser restriction of POST-ing to a 3rd party domain.
-     * This method is used only by the Recommendations AI JavaScript pixel.
-     * Users should not call this method directly.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.api.HttpBody>
         collectUserEvent(
             com.google.cloud.recommendationengine.v1beta1.CollectUserEventRequest request) {
@@ -697,13 +529,7 @@ public final class UserEventServiceGrpc {
           getChannel().newCall(getCollectUserEventMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of user events within a time range, with potential filtering.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.ListUserEventsResponse>
         listUserEvents(
@@ -712,16 +538,7 @@ public final class UserEventServiceGrpc {
           getChannel().newCall(getListUserEventsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes permanently all user events specified by the filter provided.
-     * Depending on the number of events specified by the filter, this operation
-     * could take hours or days to complete. To test a filter, use the list
-     * command first.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         purgeUserEvents(
             com.google.cloud.recommendationengine.v1beta1.PurgeUserEventsRequest request) {
@@ -729,18 +546,7 @@ public final class UserEventServiceGrpc {
           getChannel().newCall(getPurgeUserEventsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of User events. Request processing might be
-     * synchronous. Events that already exist are skipped.
-     * Use this method for backfilling historical user events.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully inserted.
-     * Operation.metadata is of type ImportMetadata.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         importUserEvents(
             com.google.cloud.recommendationengine.v1beta1.ImportUserEventsRequest request) {

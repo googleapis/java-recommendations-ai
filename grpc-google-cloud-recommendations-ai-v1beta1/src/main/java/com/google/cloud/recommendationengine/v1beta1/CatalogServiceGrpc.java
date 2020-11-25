@@ -22,13 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Service for ingesting catalog information of the customer's website.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/recommendationengine/v1beta1/catalog_service.proto")
@@ -362,22 +356,10 @@ public final class CatalogServiceGrpc {
     return CatalogServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting catalog information of the customer's website.
-   * </pre>
-   */
+  /** */
   public abstract static class CatalogServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a catalog item.
-     * </pre>
-     */
+    /** */
     public void createCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.CreateCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.CatalogItem>
@@ -385,13 +367,7 @@ public final class CatalogServiceGrpc {
       asyncUnimplementedUnaryCall(getCreateCatalogItemMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a specific catalog item.
-     * </pre>
-     */
+    /** */
     public void getCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.GetCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.CatalogItem>
@@ -399,13 +375,7 @@ public final class CatalogServiceGrpc {
       asyncUnimplementedUnaryCall(getGetCatalogItemMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of catalog items.
-     * </pre>
-     */
+    /** */
     public void listCatalogItems(
         com.google.cloud.recommendationengine.v1beta1.ListCatalogItemsRequest request,
         io.grpc.stub.StreamObserver<
@@ -414,14 +384,7 @@ public final class CatalogServiceGrpc {
       asyncUnimplementedUnaryCall(getListCatalogItemsMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates a catalog item. Partial updating is supported. Non-existing
-     * items will be created.
-     * </pre>
-     */
+    /** */
     public void updateCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.UpdateCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.CatalogItem>
@@ -429,30 +392,14 @@ public final class CatalogServiceGrpc {
       asyncUnimplementedUnaryCall(getUpdateCatalogItemMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a catalog item.
-     * </pre>
-     */
+    /** */
     public void deleteCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.DeleteCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
       asyncUnimplementedUnaryCall(getDeleteCatalogItemMethod(), responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of multiple catalog items. Request processing may be
-     * synchronous. No partial updating supported. Non-existing items will be
-     * created.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully updated.
-     * </pre>
-     */
+    /** */
     public void importCatalogItems(
         com.google.cloud.recommendationengine.v1beta1.ImportCatalogItemsRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -506,13 +453,7 @@ public final class CatalogServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting catalog information of the customer's website.
-   * </pre>
-   */
+  /** */
   public static final class CatalogServiceStub
       extends io.grpc.stub.AbstractAsyncStub<CatalogServiceStub> {
     private CatalogServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -524,13 +465,7 @@ public final class CatalogServiceGrpc {
       return new CatalogServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a catalog item.
-     * </pre>
-     */
+    /** */
     public void createCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.CreateCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.CatalogItem>
@@ -541,13 +476,7 @@ public final class CatalogServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a specific catalog item.
-     * </pre>
-     */
+    /** */
     public void getCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.GetCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.CatalogItem>
@@ -558,13 +487,7 @@ public final class CatalogServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of catalog items.
-     * </pre>
-     */
+    /** */
     public void listCatalogItems(
         com.google.cloud.recommendationengine.v1beta1.ListCatalogItemsRequest request,
         io.grpc.stub.StreamObserver<
@@ -576,14 +499,7 @@ public final class CatalogServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates a catalog item. Partial updating is supported. Non-existing
-     * items will be created.
-     * </pre>
-     */
+    /** */
     public void updateCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.UpdateCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.CatalogItem>
@@ -594,13 +510,7 @@ public final class CatalogServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a catalog item.
-     * </pre>
-     */
+    /** */
     public void deleteCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.DeleteCatalogItemRequest request,
         io.grpc.stub.StreamObserver<com.google.protobuf.Empty> responseObserver) {
@@ -610,17 +520,7 @@ public final class CatalogServiceGrpc {
           responseObserver);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of multiple catalog items. Request processing may be
-     * synchronous. No partial updating supported. Non-existing items will be
-     * created.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully updated.
-     * </pre>
-     */
+    /** */
     public void importCatalogItems(
         com.google.cloud.recommendationengine.v1beta1.ImportCatalogItemsRequest request,
         io.grpc.stub.StreamObserver<com.google.longrunning.Operation> responseObserver) {
@@ -631,13 +531,7 @@ public final class CatalogServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting catalog information of the customer's website.
-   * </pre>
-   */
+  /** */
   public static final class CatalogServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<CatalogServiceBlockingStub> {
     private CatalogServiceBlockingStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -650,82 +544,41 @@ public final class CatalogServiceGrpc {
       return new CatalogServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a catalog item.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.CatalogItem createCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.CreateCatalogItemRequest request) {
       return blockingUnaryCall(
           getChannel(), getCreateCatalogItemMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a specific catalog item.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.CatalogItem getCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.GetCatalogItemRequest request) {
       return blockingUnaryCall(getChannel(), getGetCatalogItemMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of catalog items.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.ListCatalogItemsResponse listCatalogItems(
         com.google.cloud.recommendationengine.v1beta1.ListCatalogItemsRequest request) {
       return blockingUnaryCall(
           getChannel(), getListCatalogItemsMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates a catalog item. Partial updating is supported. Non-existing
-     * items will be created.
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.CatalogItem updateCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.UpdateCatalogItemRequest request) {
       return blockingUnaryCall(
           getChannel(), getUpdateCatalogItemMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a catalog item.
-     * </pre>
-     */
+    /** */
     public com.google.protobuf.Empty deleteCatalogItem(
         com.google.cloud.recommendationengine.v1beta1.DeleteCatalogItemRequest request) {
       return blockingUnaryCall(
           getChannel(), getDeleteCatalogItemMethod(), getCallOptions(), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of multiple catalog items. Request processing may be
-     * synchronous. No partial updating supported. Non-existing items will be
-     * created.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully updated.
-     * </pre>
-     */
+    /** */
     public com.google.longrunning.Operation importCatalogItems(
         com.google.cloud.recommendationengine.v1beta1.ImportCatalogItemsRequest request) {
       return blockingUnaryCall(
@@ -733,13 +586,7 @@ public final class CatalogServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for ingesting catalog information of the customer's website.
-   * </pre>
-   */
+  /** */
   public static final class CatalogServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<CatalogServiceFutureStub> {
     private CatalogServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -752,13 +599,7 @@ public final class CatalogServiceGrpc {
       return new CatalogServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Creates a catalog item.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.CatalogItem>
         createCatalogItem(
@@ -767,13 +608,7 @@ public final class CatalogServiceGrpc {
           getChannel().newCall(getCreateCatalogItemMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a specific catalog item.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.CatalogItem>
         getCatalogItem(
@@ -782,13 +617,7 @@ public final class CatalogServiceGrpc {
           getChannel().newCall(getGetCatalogItemMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Gets a list of catalog items.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.ListCatalogItemsResponse>
         listCatalogItems(
@@ -797,14 +626,7 @@ public final class CatalogServiceGrpc {
           getChannel().newCall(getListCatalogItemsMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Updates a catalog item. Partial updating is supported. Non-existing
-     * items will be created.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.CatalogItem>
         updateCatalogItem(
@@ -813,13 +635,7 @@ public final class CatalogServiceGrpc {
           getChannel().newCall(getUpdateCatalogItemMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Deletes a catalog item.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.protobuf.Empty>
         deleteCatalogItem(
             com.google.cloud.recommendationengine.v1beta1.DeleteCatalogItemRequest request) {
@@ -827,17 +643,7 @@ public final class CatalogServiceGrpc {
           getChannel().newCall(getDeleteCatalogItemMethod(), getCallOptions()), request);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Bulk import of multiple catalog items. Request processing may be
-     * synchronous. No partial updating supported. Non-existing items will be
-     * created.
-     * Operation.response is of type ImportResponse. Note that it is
-     * possible for a subset of the items to be successfully updated.
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<com.google.longrunning.Operation>
         importCatalogItems(
             com.google.cloud.recommendationengine.v1beta1.ImportCatalogItemsRequest request) {

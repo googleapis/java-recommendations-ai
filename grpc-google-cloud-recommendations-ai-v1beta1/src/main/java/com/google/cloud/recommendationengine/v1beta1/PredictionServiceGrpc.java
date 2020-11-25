@@ -22,13 +22,7 @@ import static io.grpc.stub.ClientCalls.futureUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnaryCall;
 import static io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall;
 
-/**
- *
- *
- * <pre>
- * Service for making recommendation prediction.
- * </pre>
- */
+/** */
 @javax.annotation.Generated(
     value = "by gRPC proto compiler",
     comments = "Source: google/cloud/recommendationengine/v1beta1/prediction_service.proto")
@@ -127,25 +121,10 @@ public final class PredictionServiceGrpc {
     return PredictionServiceFutureStub.newStub(factory, channel);
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for making recommendation prediction.
-   * </pre>
-   */
+  /** */
   public abstract static class PredictionServiceImplBase implements io.grpc.BindableService {
 
-    /**
-     *
-     *
-     * <pre>
-     * Makes a recommendation prediction. If using API Key based authentication,
-     * the API Key must be registered using the
-     * [PredictionApiKeyRegistry][google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry]
-     * service. [Learn more](/recommendations-ai/docs/setting-up#register-key).
-     * </pre>
-     */
+    /** */
     public void predict(
         com.google.cloud.recommendationengine.v1beta1.PredictRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.PredictResponse>
@@ -167,13 +146,7 @@ public final class PredictionServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for making recommendation prediction.
-   * </pre>
-   */
+  /** */
   public static final class PredictionServiceStub
       extends io.grpc.stub.AbstractAsyncStub<PredictionServiceStub> {
     private PredictionServiceStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -186,16 +159,7 @@ public final class PredictionServiceGrpc {
       return new PredictionServiceStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Makes a recommendation prediction. If using API Key based authentication,
-     * the API Key must be registered using the
-     * [PredictionApiKeyRegistry][google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry]
-     * service. [Learn more](/recommendations-ai/docs/setting-up#register-key).
-     * </pre>
-     */
+    /** */
     public void predict(
         com.google.cloud.recommendationengine.v1beta1.PredictRequest request,
         io.grpc.stub.StreamObserver<com.google.cloud.recommendationengine.v1beta1.PredictResponse>
@@ -205,13 +169,7 @@ public final class PredictionServiceGrpc {
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for making recommendation prediction.
-   * </pre>
-   */
+  /** */
   public static final class PredictionServiceBlockingStub
       extends io.grpc.stub.AbstractBlockingStub<PredictionServiceBlockingStub> {
     private PredictionServiceBlockingStub(
@@ -225,29 +183,14 @@ public final class PredictionServiceGrpc {
       return new PredictionServiceBlockingStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Makes a recommendation prediction. If using API Key based authentication,
-     * the API Key must be registered using the
-     * [PredictionApiKeyRegistry][google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry]
-     * service. [Learn more](/recommendations-ai/docs/setting-up#register-key).
-     * </pre>
-     */
+    /** */
     public com.google.cloud.recommendationengine.v1beta1.PredictResponse predict(
         com.google.cloud.recommendationengine.v1beta1.PredictRequest request) {
       return blockingUnaryCall(getChannel(), getPredictMethod(), getCallOptions(), request);
     }
   }
 
-  /**
-   *
-   *
-   * <pre>
-   * Service for making recommendation prediction.
-   * </pre>
-   */
+  /** */
   public static final class PredictionServiceFutureStub
       extends io.grpc.stub.AbstractFutureStub<PredictionServiceFutureStub> {
     private PredictionServiceFutureStub(io.grpc.Channel channel, io.grpc.CallOptions callOptions) {
@@ -260,16 +203,7 @@ public final class PredictionServiceGrpc {
       return new PredictionServiceFutureStub(channel, callOptions);
     }
 
-    /**
-     *
-     *
-     * <pre>
-     * Makes a recommendation prediction. If using API Key based authentication,
-     * the API Key must be registered using the
-     * [PredictionApiKeyRegistry][google.cloud.recommendationengine.v1beta1.PredictionApiKeyRegistry]
-     * service. [Learn more](/recommendations-ai/docs/setting-up#register-key).
-     * </pre>
-     */
+    /** */
     public com.google.common.util.concurrent.ListenableFuture<
             com.google.cloud.recommendationengine.v1beta1.PredictResponse>
         predict(com.google.cloud.recommendationengine.v1beta1.PredictRequest request) {
