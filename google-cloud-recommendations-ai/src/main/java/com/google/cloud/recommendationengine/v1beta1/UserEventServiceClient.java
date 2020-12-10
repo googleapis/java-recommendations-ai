@@ -166,7 +166,7 @@ public class UserEventServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent eventStore resource name, such as
    *     "projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store".
-   * @param user_event Required. User event to write.
+   * @param userEvent Required. User event to write.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final UserEvent writeUserEvent(EventStoreName parent, UserEvent userEvent) {
@@ -184,7 +184,7 @@ public class UserEventServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent eventStore resource name, such as
    *     "projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store".
-   * @param user_event Required. User event to write.
+   * @param userEvent Required. User event to write.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final UserEvent writeUserEvent(String parent, UserEvent userEvent) {
@@ -224,7 +224,7 @@ public class UserEventServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent eventStore name, such as
    *     "projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store".
-   * @param user_event Required. URL encoded UserEvent proto.
+   * @param userEvent Required. URL encoded UserEvent proto.
    * @param uri Optional. The url including cgi-parameters but excluding the hash fragment. The URL
    *     must be truncated to 1.5K bytes to conservatively be under the 2K bytes. This is often more
    *     useful than the referer url, because many browsers only send the domain for 3rd party
@@ -255,7 +255,7 @@ public class UserEventServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent eventStore name, such as
    *     "projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store".
-   * @param user_event Required. URL encoded UserEvent proto.
+   * @param userEvent Required. URL encoded UserEvent proto.
    * @param uri Optional. The url including cgi-parameters but excluding the hash fragment. The URL
    *     must be truncated to 1.5K bytes to conservatively be under the 2K bytes. This is often more
    *     useful than the referer url, because many browsers only send the domain for 3rd party
@@ -540,13 +540,13 @@ public class UserEventServiceClient implements BackgroundResource {
    *
    * @param parent Required.
    *     "projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store"
-   * @param request_id Optional. Unique identifier provided by client, within the ancestor dataset
+   * @param requestId Optional. Unique identifier provided by client, within the ancestor dataset
    *     scope. Ensures idempotency for expensive long running operations. Server-generated if
    *     unspecified. Up to 128 characters long. This is returned as
    *     google.longrunning.Operation.name in the response. Note that this field must not be set if
    *     the desired input config is catalog_inline_source.
-   * @param input_config Required. The desired input location of the data.
-   * @param errors_config Optional. The desired location of errors incurred during the Import.
+   * @param inputConfig Required. The desired input location of the data.
+   * @param errorsConfig Optional. The desired location of errors incurred during the Import.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ImportUserEventsResponse, ImportMetadata> importUserEventsAsync(
@@ -574,13 +574,13 @@ public class UserEventServiceClient implements BackgroundResource {
    *
    * @param parent Required.
    *     "projects/1234/locations/global/catalogs/default_catalog/eventStores/default_event_store"
-   * @param request_id Optional. Unique identifier provided by client, within the ancestor dataset
+   * @param requestId Optional. Unique identifier provided by client, within the ancestor dataset
    *     scope. Ensures idempotency for expensive long running operations. Server-generated if
    *     unspecified. Up to 128 characters long. This is returned as
    *     google.longrunning.Operation.name in the response. Note that this field must not be set if
    *     the desired input config is catalog_inline_source.
-   * @param input_config Required. The desired input location of the data.
-   * @param errors_config Optional. The desired location of errors incurred during the Import.
+   * @param inputConfig Required. The desired input location of the data.
+   * @param errorsConfig Optional. The desired location of errors incurred during the Import.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ImportUserEventsResponse, ImportMetadata> importUserEventsAsync(

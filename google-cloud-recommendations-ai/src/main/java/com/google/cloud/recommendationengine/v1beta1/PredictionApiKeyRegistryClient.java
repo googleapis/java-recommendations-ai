@@ -156,7 +156,7 @@ public class PredictionApiKeyRegistryClient implements BackgroundResource {
    *
    * @param parent Required. The parent resource path.
    *     "projects/&#42;/locations/global/catalogs/default_catalog/eventStores/default_event_store".
-   * @param prediction_api_key_registration Required. The prediction API key registration.
+   * @param predictionApiKeyRegistration Required. The prediction API key registration.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final PredictionApiKeyRegistration createPredictionApiKeyRegistration(
@@ -175,7 +175,7 @@ public class PredictionApiKeyRegistryClient implements BackgroundResource {
    *
    * @param parent Required. The parent resource path.
    *     "projects/&#42;/locations/global/catalogs/default_catalog/eventStores/default_event_store".
-   * @param prediction_api_key_registration Required. The prediction API key registration.
+   * @param predictionApiKeyRegistration Required. The prediction API key registration.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final PredictionApiKeyRegistration createPredictionApiKeyRegistration(

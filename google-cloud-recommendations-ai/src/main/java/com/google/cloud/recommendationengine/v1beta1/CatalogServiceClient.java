@@ -164,7 +164,7 @@ public class CatalogServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent catalog resource name, such as
    *     "projects/&#42;/locations/global/catalogs/default_catalog".
-   * @param catalog_item Required. The catalog item to create.
+   * @param catalogItem Required. The catalog item to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final CatalogItem createCatalogItem(CatalogName parent, CatalogItem catalogItem) {
@@ -182,7 +182,7 @@ public class CatalogServiceClient implements BackgroundResource {
    *
    * @param parent Required. The parent catalog resource name, such as
    *     "projects/&#42;/locations/global/catalogs/default_catalog".
-   * @param catalog_item Required. The catalog item to create.
+   * @param catalogItem Required. The catalog item to create.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final CatalogItem createCatalogItem(String parent, CatalogItem catalogItem) {
@@ -332,9 +332,9 @@ public class CatalogServiceClient implements BackgroundResource {
    *
    * @param name Required. Full resource name of catalog item, such as
    *     "projects/&#42;/locations/global/catalogs/default_catalog/catalogItems/some_catalog_item_id".
-   * @param catalog_item Required. The catalog item to update/create. The 'catalog_item_id' field
-   *     has to match that in the 'name'.
-   * @param update_mask Optional. Indicates which fields in the provided 'item' to update. If not
+   * @param catalogItem Required. The catalog item to update/create. The 'catalog_item_id' field has
+   *     to match that in the 'name'.
+   * @param updateMask Optional. Indicates which fields in the provided 'item' to update. If not
    *     set, will by default update all fields.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -355,9 +355,9 @@ public class CatalogServiceClient implements BackgroundResource {
    *
    * @param name Required. Full resource name of catalog item, such as
    *     "projects/&#42;/locations/global/catalogs/default_catalog/catalogItems/some_catalog_item_id".
-   * @param catalog_item Required. The catalog item to update/create. The 'catalog_item_id' field
-   *     has to match that in the 'name'.
-   * @param update_mask Optional. Indicates which fields in the provided 'item' to update. If not
+   * @param catalogItem Required. The catalog item to update/create. The 'catalog_item_id' field has
+   *     to match that in the 'name'.
+   * @param updateMask Optional. Indicates which fields in the provided 'item' to update. If not
    *     set, will by default update all fields.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
@@ -452,12 +452,12 @@ public class CatalogServiceClient implements BackgroundResource {
    * items to be successfully updated.
    *
    * @param parent Required. "projects/1234/locations/global/catalogs/default_catalog"
-   * @param request_id Optional. Unique identifier provided by client, within the ancestor dataset
+   * @param requestId Optional. Unique identifier provided by client, within the ancestor dataset
    *     scope. Ensures idempotency and used for request deduplication. Server-generated if
    *     unspecified. Up to 128 characters long. This is returned as
    *     google.longrunning.Operation.name in the response.
-   * @param input_config Required. The desired input location of the data.
-   * @param errors_config Optional. The desired location of errors incurred during the Import.
+   * @param inputConfig Required. The desired input location of the data.
+   * @param errorsConfig Optional. The desired location of errors incurred during the Import.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ImportCatalogItemsResponse, ImportMetadata> importCatalogItemsAsync(
@@ -484,12 +484,12 @@ public class CatalogServiceClient implements BackgroundResource {
    * items to be successfully updated.
    *
    * @param parent Required. "projects/1234/locations/global/catalogs/default_catalog"
-   * @param request_id Optional. Unique identifier provided by client, within the ancestor dataset
+   * @param requestId Optional. Unique identifier provided by client, within the ancestor dataset
    *     scope. Ensures idempotency and used for request deduplication. Server-generated if
    *     unspecified. Up to 128 characters long. This is returned as
    *     google.longrunning.Operation.name in the response.
-   * @param input_config Required. The desired input location of the data.
-   * @param errors_config Optional. The desired location of errors incurred during the Import.
+   * @param inputConfig Required. The desired input location of the data.
+   * @param errorsConfig Optional. The desired location of errors incurred during the Import.
    * @throws com.google.api.gax.rpc.ApiException if the remote call fails
    */
   public final OperationFuture<ImportCatalogItemsResponse, ImportMetadata> importCatalogItemsAsync(

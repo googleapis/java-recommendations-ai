@@ -179,7 +179,7 @@ public class PredictionServiceClient implements BackgroundResource {
    *     </ul>
    *     <p>The full list of available placements can be seen at
    *     https://console.cloud.google.com/recommendation/datafeeds/default_catalog/dashboard
-   * @param user_event Required. Context about the user, what they are looking at and what action
+   * @param userEvent Required. Context about the user, what they are looking at and what action
    *     they took to trigger the predict request. Note that this user event detail won't be
    *     ingested to userEvent logs. Thus, a separate userEvent write request is required for event
    *     logging.
@@ -229,7 +229,7 @@ public class PredictionServiceClient implements BackgroundResource {
    *     </ul>
    *     <p>The full list of available placements can be seen at
    *     https://console.cloud.google.com/recommendation/datafeeds/default_catalog/dashboard
-   * @param user_event Required. Context about the user, what they are looking at and what action
+   * @param userEvent Required. Context about the user, what they are looking at and what action
    *     they took to trigger the predict request. Note that this user event detail won't be
    *     ingested to userEvent logs. Thus, a separate userEvent write request is required for event
    *     logging.
