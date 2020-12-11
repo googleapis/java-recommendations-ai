@@ -83,7 +83,7 @@ public class PredictionApiKeyRegistryClientTest {
   @Test
   public void createPredictionApiKeyRegistrationTest() throws Exception {
     PredictionApiKeyRegistration expectedResponse =
-        PredictionApiKeyRegistration.newBuilder().setApiKey("api_key-800085318").build();
+        PredictionApiKeyRegistration.newBuilder().setApiKey("apiKey-1411301915").build();
     mockPredictionApiKeyRegistry.addResponse(expectedResponse);
 
     EventStoreName parent =
@@ -129,7 +129,7 @@ public class PredictionApiKeyRegistryClientTest {
   @Test
   public void createPredictionApiKeyRegistrationTest2() throws Exception {
     PredictionApiKeyRegistration expectedResponse =
-        PredictionApiKeyRegistration.newBuilder().setApiKey("api_key-800085318").build();
+        PredictionApiKeyRegistration.newBuilder().setApiKey("apiKey-1411301915").build();
     mockPredictionApiKeyRegistry.addResponse(expectedResponse);
 
     String parent = "parent-995424086";

@@ -95,9 +95,9 @@ public class CatalogServiceClientTest {
             .setTitle("title110371416")
             .setDescription("description-1724546052")
             .setItemAttributes(FeatureMap.newBuilder().build())
-            .setLanguageCode("language_code-412800396")
+            .setLanguageCode("languageCode-2092349083")
             .addAllTags(new ArrayList<String>())
-            .setItemGroupId("item_group_id894431879")
+            .setItemGroupId("itemGroupId-240489113")
             .build();
     mockCatalogService.addResponse(expectedResponse);
 
@@ -143,9 +143,9 @@ public class CatalogServiceClientTest {
             .setTitle("title110371416")
             .setDescription("description-1724546052")
             .setItemAttributes(FeatureMap.newBuilder().build())
-            .setLanguageCode("language_code-412800396")
+            .setLanguageCode("languageCode-2092349083")
             .addAllTags(new ArrayList<String>())
-            .setItemGroupId("item_group_id894431879")
+            .setItemGroupId("itemGroupId-240489113")
             .build();
     mockCatalogService.addResponse(expectedResponse);
 
@@ -191,9 +191,9 @@ public class CatalogServiceClientTest {
             .setTitle("title110371416")
             .setDescription("description-1724546052")
             .setItemAttributes(FeatureMap.newBuilder().build())
-            .setLanguageCode("language_code-412800396")
+            .setLanguageCode("languageCode-2092349083")
             .addAllTags(new ArrayList<String>())
-            .setItemGroupId("item_group_id894431879")
+            .setItemGroupId("itemGroupId-240489113")
             .build();
     mockCatalogService.addResponse(expectedResponse);
 
@@ -238,9 +238,9 @@ public class CatalogServiceClientTest {
             .setTitle("title110371416")
             .setDescription("description-1724546052")
             .setItemAttributes(FeatureMap.newBuilder().build())
-            .setLanguageCode("language_code-412800396")
+            .setLanguageCode("languageCode-2092349083")
             .addAllTags(new ArrayList<String>())
-            .setItemGroupId("item_group_id894431879")
+            .setItemGroupId("itemGroupId-240489113")
             .build();
     mockCatalogService.addResponse(expectedResponse);
 
@@ -377,9 +377,9 @@ public class CatalogServiceClientTest {
             .setTitle("title110371416")
             .setDescription("description-1724546052")
             .setItemAttributes(FeatureMap.newBuilder().build())
-            .setLanguageCode("language_code-412800396")
+            .setLanguageCode("languageCode-2092349083")
             .addAllTags(new ArrayList<String>())
-            .setItemGroupId("item_group_id894431879")
+            .setItemGroupId("itemGroupId-240489113")
             .build();
     mockCatalogService.addResponse(expectedResponse);
 
@@ -430,9 +430,9 @@ public class CatalogServiceClientTest {
             .setTitle("title110371416")
             .setDescription("description-1724546052")
             .setItemAttributes(FeatureMap.newBuilder().build())
-            .setLanguageCode("language_code-412800396")
+            .setLanguageCode("languageCode-2092349083")
             .addAllTags(new ArrayList<String>())
-            .setItemGroupId("item_group_id894431879")
+            .setItemGroupId("itemGroupId-240489113")
             .build();
     mockCatalogService.addResponse(expectedResponse);
 
@@ -558,7 +558,7 @@ public class CatalogServiceClientTest {
     mockCatalogService.addResponse(resultOperation);
 
     CatalogName parent = CatalogName.of("[PROJECT]", "[LOCATION]", "[CATALOG]");
-    String requestId = "request_id37109963";
+    String requestId = "requestId693933066";
     InputConfig inputConfig = InputConfig.newBuilder().build();
     ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
 
@@ -587,7 +587,7 @@ public class CatalogServiceClientTest {
 
     try {
       CatalogName parent = CatalogName.of("[PROJECT]", "[LOCATION]", "[CATALOG]");
-      String requestId = "request_id37109963";
+      String requestId = "requestId693933066";
       InputConfig inputConfig = InputConfig.newBuilder().build();
       ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
       client.importCatalogItemsAsync(parent, requestId, inputConfig, errorsConfig).get();
@@ -615,7 +615,7 @@ public class CatalogServiceClientTest {
     mockCatalogService.addResponse(resultOperation);
 
     String parent = "parent-995424086";
-    String requestId = "request_id37109963";
+    String requestId = "requestId693933066";
     InputConfig inputConfig = InputConfig.newBuilder().build();
     ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
 
@@ -644,7 +644,7 @@ public class CatalogServiceClientTest {
 
     try {
       String parent = "parent-995424086";
-      String requestId = "request_id37109963";
+      String requestId = "requestId693933066";
       InputConfig inputConfig = InputConfig.newBuilder().build();
       ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
       client.importCatalogItemsAsync(parent, requestId, inputConfig, errorsConfig).get();

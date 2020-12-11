@@ -91,7 +91,7 @@ public class UserEventServiceClientTest {
   public void writeUserEventTest() throws Exception {
     UserEvent expectedResponse =
         UserEvent.newBuilder()
-            .setEventType("event_type984376767")
+            .setEventType("eventType31430900")
             .setUserInfo(UserInfo.newBuilder().build())
             .setEventDetail(EventDetail.newBuilder().build())
             .setProductEventDetail(ProductEventDetail.newBuilder().build())
@@ -138,7 +138,7 @@ public class UserEventServiceClientTest {
   public void writeUserEventTest2() throws Exception {
     UserEvent expectedResponse =
         UserEvent.newBuilder()
-            .setEventType("event_type984376767")
+            .setEventType("eventType31430900")
             .setUserInfo(UserInfo.newBuilder().build())
             .setEventDetail(EventDetail.newBuilder().build())
             .setProductEventDetail(ProductEventDetail.newBuilder().build())
@@ -183,7 +183,7 @@ public class UserEventServiceClientTest {
   public void collectUserEventTest() throws Exception {
     HttpBody expectedResponse =
         HttpBody.newBuilder()
-            .setContentType("content_type831846208")
+            .setContentType("contentType-389131437")
             .setData(ByteString.EMPTY)
             .addAllExtensions(new ArrayList<Any>())
             .build();
@@ -191,7 +191,7 @@ public class UserEventServiceClientTest {
 
     EventStoreName parent =
         EventStoreName.of("[PROJECT]", "[LOCATION]", "[CATALOG]", "[EVENT_STORE]");
-    String userEvent = "user_event1921940774";
+    String userEvent = "userEvent315571599";
     String uri = "uri116076";
     long ets = 100772;
 
@@ -220,7 +220,7 @@ public class UserEventServiceClientTest {
     try {
       EventStoreName parent =
           EventStoreName.of("[PROJECT]", "[LOCATION]", "[CATALOG]", "[EVENT_STORE]");
-      String userEvent = "user_event1921940774";
+      String userEvent = "userEvent315571599";
       String uri = "uri116076";
       long ets = 100772;
       client.collectUserEvent(parent, userEvent, uri, ets);
@@ -234,14 +234,14 @@ public class UserEventServiceClientTest {
   public void collectUserEventTest2() throws Exception {
     HttpBody expectedResponse =
         HttpBody.newBuilder()
-            .setContentType("content_type831846208")
+            .setContentType("contentType-389131437")
             .setData(ByteString.EMPTY)
             .addAllExtensions(new ArrayList<Any>())
             .build();
     mockUserEventService.addResponse(expectedResponse);
 
     String parent = "parent-995424086";
-    String userEvent = "user_event1921940774";
+    String userEvent = "userEvent315571599";
     String uri = "uri116076";
     long ets = 100772;
 
@@ -269,7 +269,7 @@ public class UserEventServiceClientTest {
 
     try {
       String parent = "parent-995424086";
-      String userEvent = "user_event1921940774";
+      String userEvent = "userEvent315571599";
       String uri = "uri116076";
       long ets = 100772;
       client.collectUserEvent(parent, userEvent, uri, ets);
@@ -503,7 +503,7 @@ public class UserEventServiceClientTest {
 
     EventStoreName parent =
         EventStoreName.of("[PROJECT]", "[LOCATION]", "[CATALOG]", "[EVENT_STORE]");
-    String requestId = "request_id37109963";
+    String requestId = "requestId693933066";
     InputConfig inputConfig = InputConfig.newBuilder().build();
     ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
 
@@ -533,7 +533,7 @@ public class UserEventServiceClientTest {
     try {
       EventStoreName parent =
           EventStoreName.of("[PROJECT]", "[LOCATION]", "[CATALOG]", "[EVENT_STORE]");
-      String requestId = "request_id37109963";
+      String requestId = "requestId693933066";
       InputConfig inputConfig = InputConfig.newBuilder().build();
       ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
       client.importUserEventsAsync(parent, requestId, inputConfig, errorsConfig).get();
@@ -562,7 +562,7 @@ public class UserEventServiceClientTest {
     mockUserEventService.addResponse(resultOperation);
 
     String parent = "parent-995424086";
-    String requestId = "request_id37109963";
+    String requestId = "requestId693933066";
     InputConfig inputConfig = InputConfig.newBuilder().build();
     ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
 
@@ -591,7 +591,7 @@ public class UserEventServiceClientTest {
 
     try {
       String parent = "parent-995424086";
-      String requestId = "request_id37109963";
+      String requestId = "requestId693933066";
       InputConfig inputConfig = InputConfig.newBuilder().build();
       ImportErrorsConfig errorsConfig = ImportErrorsConfig.newBuilder().build();
       client.importUserEventsAsync(parent, requestId, inputConfig, errorsConfig).get();
