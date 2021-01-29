@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.4.0](https://www.github.com/googleapis/java-recommendations-ai/compare/v0.3.7...v0.4.0) (2021-01-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* Apply namespace/package options to RecommendationEngine resources proto. (#210)
+
+### Bug Fixes
+
+* Apply namespace/package options to RecommendationEngine resources proto. ([#210](https://www.github.com/googleapis/java-recommendations-ai/issues/210)) ([d3fd7c3](https://www.github.com/googleapis/java-recommendations-ai/commit/d3fd7c34b2d5ff5338d0e8b036b797538019a898))
+
+
+### Dependencies
+
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.16.0 ([#208](https://www.github.com/googleapis/java-recommendations-ai/issues/208)) ([c749372](https://www.github.com/googleapis/java-recommendations-ai/commit/c74937218cb62b623ac6b69e67f55901cb718da1))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.16.1 ([b98fdc4](https://www.github.com/googleapis/java-recommendations-ai/commit/b98fdc49860c80873046317521cc373ac60515e8))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.17.0 ([#228](https://www.github.com/googleapis/java-recommendations-ai/issues/228)) ([1740c66](https://www.github.com/googleapis/java-recommendations-ai/commit/1740c662151eec626b823f31a95381551eba8a0a))
+* update dependency com.google.cloud:google-cloud-shared-dependencies to v0.18.0 ([#235](https://www.github.com/googleapis/java-recommendations-ai/issues/235)) ([fb4740b](https://www.github.com/googleapis/java-recommendations-ai/commit/fb4740bc68e54202f1b1486ceb94f0a64243de3e))
+
 ### [0.3.7](https://www.github.com/googleapis/java-recommendations-ai/compare/v0.3.6...v0.3.7) (2020-11-02)
 
 
