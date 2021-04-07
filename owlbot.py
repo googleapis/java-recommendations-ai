@@ -14,23 +14,6 @@
 
 """This script is used to synthesize generated parts of this library."""
 
-import synthtool as s
-import synthtool.gcp as gcp
 import synthtool.languages.java as java
-
-AUTOSYNTH_MULTIPLE_COMMITS = True
-
-service = 'recommendationengine'
-versions = ['v1beta1']
-
-for version in versions:
-  java.bazel_library(
-      service=service,
-      version=version,
-      package_pattern='com.google.cloud.{service}.{version}',
-      proto_path=f'google/cloud/{service}/{version}',
-      bazel_target=f'//google/cloud/{service}/{version}:google-cloud-{service}-{version}-java',
-      destination_name='recommendations-ai',
-  )
 
 java.common_templates()
