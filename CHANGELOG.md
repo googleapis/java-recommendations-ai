@@ -1,5 +1,12 @@
 # Changelog
 
+### [0.6.2](https://www.github.com/googleapis/java-recommendations-ai/compare/v0.6.1...v0.6.2) (2021-07-16)
+
+
+### Bug Fixes
+
+* Add `shopt -s nullglob` to dependencies script ([#344](https://www.github.com/googleapis/java-recommendations-ai/issues/344)) ([40d14b2](https://www.github.com/googleapis/java-recommendations-ai/commit/40d14b2f0dd4fccd6f74d489c48c4677b50f2499))
+
 ### [0.6.1](https://www.github.com/googleapis/java-recommendations-ai/compare/v0.6.0...v0.6.1) (2021-07-01)
 
 
