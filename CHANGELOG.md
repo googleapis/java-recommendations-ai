@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://www.github.com/googleapis/java-recommendations-ai/compare/v0.6.1...v0.7.0) (2021-08-04)
+
+
+### Features
+
+* configure initial sp version ([#366](https://www.github.com/googleapis/java-recommendations-ai/issues/366)) ([7d22908](https://www.github.com/googleapis/java-recommendations-ai/commit/7d229085b838601adc42a20dcc507bf00da21dd5))
+
 ### [0.6.1](https://www.github.com/googleapis/java-recommendations-ai/compare/v0.6.0...v0.6.1) (2021-07-01)
 
 
