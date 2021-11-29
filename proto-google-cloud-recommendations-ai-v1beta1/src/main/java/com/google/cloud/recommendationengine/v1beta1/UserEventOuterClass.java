@@ -69,8 +69,7 @@ public final class UserEventOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + ":google/cloud/recommendationengine/v1beta1/user_event.proto\022)google.cloud.recom"
-          + "mendationengine.v1beta1\032\037google/api/field_behavior.proto\0327google/cloud/recommendationengine/v1beta1/catalog.proto\0326google/cloud/recommendationengine/v1beta1/common.proto\032\037google/protobuf/timestamp.proto\032\034google/api/annotations.proto\"\222\004\n"
+          + ":google/cloud/recommendationengine/v1beta1/user_event.proto\022)google.cloud.recommendationengine.v1beta1\032\037google/api/field_behavior.proto\0327google/cloud/recommendationengine/v1beta1/catalog.proto\0326google/cloud/recommendationengine/v1beta1/common.proto\032\037google/protobuf/timestamp.proto\032\034google/api/annotations.proto\"\222\004\n"
           + "\tUserEvent\022\027\n\n"
           + "event_type\030\001 \001(\tB\003\340A\002\022K\n"
           + "\tuser_info\030\002"

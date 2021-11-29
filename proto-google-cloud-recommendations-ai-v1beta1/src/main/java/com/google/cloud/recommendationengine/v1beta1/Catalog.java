@@ -65,8 +65,7 @@ public final class Catalog {
   static {
     java.lang.String[] descriptorData = {
       "\n"
-          + "7google/cloud/recommendationengine/v1beta1/catalog.proto\022)google.cloud.recommen"
-          + "dationengine.v1beta1\032\037google/api/field_behavior.proto\0326google/cloud/recommendationengine/v1beta1/common.proto\032\034google/protobuf/struct.proto\032\034google/api/annotations.proto\"\376\003\n"
+          + "7google/cloud/recommendationengine/v1beta1/catalog.proto\022)google.cloud.recommendationengine.v1beta1\032\037google/api/field_behavior.proto\0326google/cloud/recommendationengine/v1beta1/common.proto\032\034google/protobuf/struct.proto\032\034google/api/annotations.proto\"\376\003\n"
           + "\013CatalogItem\022\017\n"
           + "\002id\030\001 \001(\tB\003\340A\002\022k\n"
           + "\024category_hierarchies\030\002"
